@@ -26,7 +26,8 @@
       }
       nav {
         height: 120px;
-        transition: height 0.3s;
+        transition: all 0.3s;
+        opacity: 0;
       }
       main {
         margin-top: 70px;
@@ -99,8 +100,10 @@
   window.document.body.onscroll = function() {
     if(window.scrollY < 200) {
       nav.style.height = '120px'
+      nav.style.opacity = 0
     } else {
       nav.style.height = '80px'
+      nav.style.opacity = 1
     }
   }
   </script>  
